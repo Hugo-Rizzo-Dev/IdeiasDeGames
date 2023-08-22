@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+:root {
+    --font-titulo-jogos: 'PT Serif', serif;
+    --font-texto-jogos: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: linear-gradient(to right, red, blue);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    padding: 2% 10% 0% 4%;
+
+}
+
+.navegacao {
+    display: flex;
+    gap: 60px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 400;
+
+}
+
+.botoesnav {
+    background-color: #CD1818;
+    text-decoration: none;
+    text-align: center;
+    width: 100px;
+    color: black;
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 10%;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-shadow: 1px 1px 3px white, 0em 0em 1em black, 0 0 0.2em white;
+}
+
+.botoesnav:hover {
+    background-image: linear-gradient(to left, red, blue);
+    border-bottom: 3px aqua;
+    color: rgb(from color 255 100 255);
+
+}
+
+.nomejogo {
+    text-align: center;
+    font-family: var(--font-titulo-jogos);
+}
+
+.imgGame {
+    width: 300px;
+    height: 450px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 3%;
+}
+
+.textGame {
+    padding: 200px 0px 0px 150px;
+    width: 300px;
+    height: 450px;
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+    font-family: var(--font-texto-jogos);
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+/*.redape {
+
+    padding: 15px;
+    background-color: var(--cor-s);
+    color: var(--cor-p);
+    text-align: center;
+    font-family: var(--font-1);
+    font-size: 10px;
+    background-color: gray;
+}*/
+
+.icones-sociais li {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    line-height: 50px;
+    background: gray;
+    padding: 18px;
+}
+
+footer ul {
+    float: right;
+    display: table;
+}
+
+footer ul li {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+}
