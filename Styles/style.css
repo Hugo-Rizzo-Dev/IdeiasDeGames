@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
 :root {
     --font-titulo-jogos: 'PT Serif', serif;
     --font-texto-jogos: 'Roboto Condensed', sans-serif;
+    --font-frases: 'Inconsolata', monospace;
 }
 
 * {
@@ -26,7 +28,6 @@ body {
 .navegacao {
     display: flex;
     gap: 60px;
-    display: flex;
     justify-content: space-between;
     font-family: 'Shadows Into Light', cursive;
     font-weight: 400;
@@ -40,7 +41,7 @@ body {
     width: 100px;
     color: black;
     border-style: inset;
-    border-width: 5px;
+    border-width: 2px;
     border-radius: 10%;
     font-size: 20px;
     padding: 5px 15px;
@@ -79,6 +80,20 @@ body {
     display: inline-block;
 }
 
+.textoAviso {
+    background-color: white;
+    font-family: var(--font-frases);
+    font-weight: 700;
+    height: 100px;
+    width: 600px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 30px 30px 300px 30px;
+    position: relative;
+    top: 153px;
+    border: blue groove;
+    font-size: 25px;
+}
 
 /*.redape {
 
@@ -101,6 +116,8 @@ footer {
     line-height: 50px;
     background: gray;
     padding: 18px;
+    bottom: 0;
+
 }
 
 footer ul {
@@ -112,4 +129,176 @@ footer ul li {
     display: table-cell;
     vertical-align: middle;
     padding: 10px;
+}
+
+.btnOpenModal {
+    font-size: x-large;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid lightgray;
+}
+
+.modal-container {
+    width: 100vw;
+    position: fixed;
+    top: 30px;
+    display: none;
+    z-index: 999;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+span {
+    margin: 10px auto;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btns button {
+    font-size: medium;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btnOK {
+    background-color: blue !important;
+}
+
+.btnClose {
+    background-color: brown !important;
+}
+
+@media (max-width: 500px) {
+    .modal {
+        padding: 10px;
+        width: 80%;
+    }
+
+    span,
+    .btns button {
+        font-size: smaller;
+    }
+}
+
+
+/* FORMULARIO ESTILO DE JOGO */
+
+.box {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+#data_nascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
 }
