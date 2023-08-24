@@ -1,9 +1,11 @@
 const modal = document.querySelector('.modal-container')
 
 function openModal() {
-    modal.classList.add('active')
+    alert('Este site foi criado com o objetivo de aprender mais sobre programação, visando estudar e aperfeiçoar os conhecimentos em Front-End')
+    // modal.classList.add('active')
 }
 
 function closeModal() {
-    modal.classList.remove('active')
+    alert('Teste')
+    // modal.classList.remove('active')
 }

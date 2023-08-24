@@ -18,6 +18,8 @@
 body {
     background-image: linear-gradient(to right, red, blue);
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
 }
 
 .cabecalho {
@@ -38,12 +40,13 @@ body {
     background-color: #CD1818;
     text-decoration: none;
     text-align: center;
-    width: 100px;
+    width: 8%;
+    height: 6%;
     color: black;
     border-style: inset;
     border-width: 2px;
     border-radius: 10%;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding: 5px 15px;
     text-shadow: 1px 1px 3px white, 0em 0em 1em black, 0 0 0.2em white;
 }
@@ -61,8 +64,10 @@ body {
 }
 
 .imgGame {
-    width: 300px;
-    height: 450px;
+    /*    width: 300px;
+    height: 450px; */
+    width: 100%;
+    height: 100%;
     border-style: solid;
     border-color: blue;
     border-radius: 3%;
@@ -74,7 +79,7 @@ body {
     height: 450px;
     text-align: justify;
     color: black;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: var(--font-texto-jogos);
     font-weight: 400;
     display: inline-block;
@@ -92,7 +97,7 @@ body {
     position: relative;
     top: 153px;
     border: blue groove;
-    font-size: 25px;
+    font-size: 1.56rem;
 }
 
 /*.redape {
@@ -113,7 +118,7 @@ body {
 }
 
 footer {
-    line-height: 50px;
+    line-height: 280%;
     background: gray;
     padding: 18px;
     bottom: 0;
@@ -131,6 +136,10 @@ footer ul li {
     padding: 10px;
 }
 
+
+/* FORMULARIO ESTILO DE JOGO */
+
+/*
 .btnOpenModal {
     font-size: x-large;
     padding: 10px;
@@ -211,6 +220,8 @@ span {
     background-color: brown !important;
 }
 
+
+
 @media (max-width: 500px) {
     .modal {
         padding: 10px;
@@ -223,9 +234,9 @@ span {
     }
 }
 
+*/
 
-/* FORMULARIO ESTILO DE JOGO */
-
+/* QUESTIONARIO */
 .box {
     color: white;
     position: absolute;
@@ -233,7 +244,7 @@ span {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 17px;
     border-radius: 15px;
     width: 20%;
 }
@@ -260,7 +271,7 @@ legend {
     border-bottom: 1px solid white;
     outline: none;
     color: white;
-    font-size: 15px;
+    font-size: 0.9rem;
     width: 100%;
     letter-spacing: 2px;
 }
@@ -276,7 +287,7 @@ legend {
 .inputUser:focus~.labelInput,
 .inputUser:valid~.labelInput {
     top: -20px;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: dodgerblue;
 }
 
@@ -285,7 +296,7 @@ legend {
     padding: 8px;
     border-radius: 10px;
     outline: none;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 #submit {
@@ -294,11 +305,36 @@ legend {
     border: none;
     padding: 15px;
     color: white;
-    font-size: 15px;
+    font-size: 0.9rem;
     cursor: pointer;
     border-radius: 10px;
 }
 
 #submit:hover {
     background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+@media (max-width: 1200px) {
+    .textoAviso {
+        width: 50%;
+        font-size: 120%;
+    }
+
+    .box {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .textoAviso {
+        width: 50%;
+        font-size: 120%;
+    }
+
+    .box {
+        width: auto;
+    }
+
+
 }
