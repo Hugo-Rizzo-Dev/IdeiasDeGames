@@ -250,14 +250,14 @@ span {
 }
 
 fieldset {
-    border: 3px solid dodgerblue;
+    border: 3px solid blue;
 }
 
 legend {
-    border: 1px solid dodgerblue;
+    border: 1px solid blue;
     padding: 10px;
     text-align: center;
-    background-color: dodgerblue;
+    background-color: blue;
     border-radius: 8px;
 }
 
@@ -288,7 +288,7 @@ legend {
 .inputUser:valid~.labelInput {
     top: -20px;
     font-size: 0.75rem;
-    color: dodgerblue;
+    color: linear-gradient(to left, red, blue);
 }
 
 #data_nascimento {
@@ -300,7 +300,7 @@ legend {
 }
 
 #submit {
-    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    background-image: linear-gradient(to left, red, blue);
     width: 100%;
     border: none;
     padding: 15px;
@@ -311,7 +311,7 @@ legend {
 }
 
 #submit:hover {
-    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+    background-image: linear-gradient(to left, red, blue);
 }
 
 @media (max-width: 1200px) {
